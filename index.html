@@ -4,45 +4,15 @@
   <meta charset="UTF-8">
   <title>Festival Checklist Generator | Christmas, New Year, Pongal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Helps search engines understand your page -->
-  <meta name="description" content="Make free festival checklists for Christmas, New Year, and Pongal. Download as PDF and shop items on Amazon or Flipkart.">
-  <meta name="keywords" content="Christmas checklist, New Year checklist, Pongal checklist, festival shopping list, checklist generator, PDF">
+  <meta name="description" content="Generate free festival checklists for Christmas, New Year, Pongal, Diwali, Eid, and Halloween. Download as PDF and shop essentials on Amazon or Flipkart.">
+  <meta name="keywords" content="Christmas checklist, New Year checklist, Pongal checklist, festival shopping list generator, free festival checklist PDF, festival essentials Amazon Flipkart">
+  <link rel="canonical" href="https://yourdomain.com/festival-checklist">
   <link rel="stylesheet" href="style.css">
-  <!-- FAQ info so Google can show answers in search -->
-  <script type="application/ld+json">
-  {
-   "@context": "https://schema.org",
-   "@type": "FAQPage",
-   "mainEntity": [{
-     "@type": "Question",
-     "name": "What should I buy for Christmas?",
-     "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Tree decorations, gifts, stockings, and dinner essentials are must-haves for Christmas."
-     }
-   },{
-     "@type": "Question",
-     "name": "What is a New Year checklist?",
-     "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "A New Year checklist includes fireworks, party snacks, resolutions, and decorations."
-     }
-   },{
-     "@type": "Question",
-     "name": "What should I prepare for Pongal?",
-     "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Sugarcane, kolam decorations, traditional clothes, and cooking essentials are key for Pongal."
-     }
-   }]
-  }
-  </script>
 </head>
 <body>
   <header>
     <h1>Festival Checklist Generator</h1>
     <p>Pick a festival and get your checklist. Download it as a PDF.</p>
-    <!-- Tiny jump links to scroll to sections -->
     <nav>
       <a href="#christmas">Christmas</a> •
       <a href="#newyear">New Year</a> •
@@ -51,7 +21,7 @@
   </header>
 
   <main>
-    <!-- The main tool -->
+    <!-- Generator -->
     <section>
       <h2>Generate your festival checklist</h2>
       <label for="festivalSelect">Choose festival:</label>
@@ -60,7 +30,6 @@
         <option value="christmas">🎄 Christmas</option>
         <option value="newyear">🎉 New Year</option>
         <option value="pongal">🌾 Pongal</option>
-        <!-- You can add more later -->
         <option value="diwali">Diwali</option>
         <option value="eid">Eid</option>
         <option value="halloween">Halloween</option>
@@ -74,25 +43,9 @@
       <button id="downloadBtn" onclick="downloadChecklist()">Download as PDF</button>
     </section>
 
-    <!-- Helpful text for search engines and readers -->
-    <section id="christmas">
-      <h2>Christmas checklist</h2>
-      <p>Decorate your tree, buy gifts, hang stockings, and prepare dinner. Download your free Christmas checklist PDF and shop on Amazon or Flipkart.</p>
-    </section>
-
-    <section id="newyear">
-      <h2>New Year checklist</h2>
-      <p>Celebrate with fireworks, party snacks, resolutions, and decorations. Get your New Year checklist template in PDF and shop online.</p>
-    </section>
-
-    <section id="pongal">
-      <h2>Pongal checklist</h2>
-      <p>Prepare sugarcane, kolam decorations, traditional clothes, and cooking essentials. Download your Pongal checklist and shop items easily.</p>
-    </section>
-
-    <!-- Optional ad space (you can replace this later) -->
+    <!-- Ad space hidden -->
     <section class="ad">
-      <p><b>Ad space:</b> Put your ad code here later.</p>
+      <p><b>Ad space:</b> Hidden for now.</p>
     </section>
   </main>
 
@@ -101,7 +54,7 @@
     <p><small>We may earn money if you buy things using Amazon or Flipkart links.</small></p>
   </footer>
 
-  <!-- Library to create PDF files -->
+  <!-- jsPDF for PDF export -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="script.js"></script>
 </body>

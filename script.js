@@ -1,4 +1,3 @@
-// Makes the checklist appear when you pick a festival
 function generateChecklist() {
   const festival = document.getElementById("festivalSelect").value;
   const checklist = document.getElementById("checklist");
@@ -28,7 +27,6 @@ function generateChecklist() {
       items = ["Please select a festival."];
   }
 
-  // Show each item and add helpful shopping links
   items.forEach(item => {
     const li = document.createElement("li");
     li.innerHTML = `${item}
@@ -38,7 +36,6 @@ function generateChecklist() {
   });
 }
 
-// Makes a PDF file you can download
 function downloadChecklist() {
   const { jsPDF } = window.jspdf;
   const doc = new jsPDF();
@@ -49,7 +46,6 @@ function downloadChecklist() {
   doc.text("Festival Checklist", 20, 10);
 
   checklistItems.forEach(li => {
-    // Remove the link words so the PDF is clean
     const text = li.textContent.replace("(Amazon)", "").replace("(Flipkart)", "").trim();
     doc.setFontSize(12);
     doc.text("- " + text, 20, y);
